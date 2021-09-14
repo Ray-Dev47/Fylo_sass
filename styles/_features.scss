@@ -1,0 +1,26 @@
+#features {
+    width: 70%;
+    margin: auto;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 100px;
+}
+.features_content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.features_content_main {
+    width: 340px;
+    margin: 0 auto;
+}
+.features_content_main .features_icon {
+    margin-bottom: 30px;
+}
+.features_content_main h2 {
+    margin-bottom: 20px;
+}
+.features_content_main p {
+    margin-bottom: 30px
+}

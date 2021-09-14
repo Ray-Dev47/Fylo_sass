@@ -1,0 +1,225 @@
+body,
+html {
+    /* color: #555; */
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffffff;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    background-image: url('./images/bg-curvy-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: hsl(218, 28%, 13%);
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// nav section
+@import './nav';
+/* main section  */
+@import './main';
+/* features section */
+@import './features';
+/* productivity section */
+@import './productivity';
+/* testimonial section */
+@import './testimonial';
+/* sign up section */
+@import './signUp';
+/* footer section */
+@import './footer';
+
+
+
+
+
+// Media queries
+
+@media only screen and (max-width: 1200px) {
+
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+
+}
+@media only screen and (max-width: 749px) {
+
+
+}
+@media only screen and (max-width: 910px) {
+    .signup-texts > p {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+.search_bar {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+} 
+.searchbar_2 button {
+    display: flex;
+    padding: 14px 120px;
+}
+#productivity .productivity_image img {
+    padding-right: 0px;
+    width: 90%;
+    height: auto;
+}
+.signup-texts > p {
+    width: 500px;
+    margin-bottom: 10pz
+
+}
+
+@media only screen and (max-width: 480px) {
+    .logo {
+        height: 24px;
+        width: auto;
+    }
+    .main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+    font-weight: bolder;
+}
+.main-nav li {
+    margin-left: 22px;
+}
+.main-img img {
+    width: 85%;
+    height: auto;
+}
+.main-texts h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 30px 0;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 23px;
+}
+.main-texts p {
+    font-size: 1.2rem;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.btn {
+    margin-bottom: 20px;
+}
+#features {
+    width: 85%;
+    margin: auto;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 100px;
+}
+.features_content_main p {
+    margin-bottom: 60px
+}
+.features_content_main h2 {
+    margin-bottom: 15px;
+}
+#productivity {
+    width: 90%;
+    margin: auto;
+}
+#productivity .productivity_image img {
+    padding-right: 0px;
+}
+.productivity_texts h1 {
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.productivity_texts p {
+    width: 350px;
+    margin: auto;
+    display: flex;
+    justify-items: flex-start;
+    margin-bottom: 20px;
+}
+#testimonial {
+    margin-right: 30px;
+    margin-left: 30px;
+    padding: 0 5px 0 5px;
+    margin-top: 150px;
+}
+.testimonial_box {
+    width: 550px;
+    margin: auto;
+    padding: 20px 30px;
+    background-color: hsl(219, 30%, 18%);
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+#sign-up {
+    /* top: -400px; */
+    margin-top: 100px;
+    background-color: hsl(217, 28%, 15%);
+    padding: 30px 0px;
+}
+.sign-up_content {
+    width: 100%;
+    margin-left: 0;
+    
+}
+.signup-texts{
+    
+    margin:0 10px;
+}
+.signup-texts h1 {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+.signup-texts p {
+    width: 100%;
+    margin: auto;
+}
+.search_bar {
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.searchbar_1>input[type=text] {
+    padding: 15px 55px;
+
+}
+.searchbar_2 .btn {
+    display: flex;
+    padding: 14px 70px;
+    border-radius: 0px;
+    border: none;
+    outline: none;
+    /* margin-left: 18px; */
+    background-color: hsl(176, 68%, 64%);
+}
+.footer_content .footer_logo img{
+    height: 45px;
+    width: auto;
+    margin-bottom: 30px;
+    display: flex;
+}
+.social-links i{
+    text-align: center;
+}
+}
+}
+
+
+
+
