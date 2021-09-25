@@ -1,5 +1,5 @@
 .container{
-	margin: 0 10px;
+	margin: 0 20px;
 }
 
 .nav {
@@ -9,6 +9,7 @@
 	left: 0;
 	right: 0;
 	transition: all 0.3s ease-in-out;
+    z-index: 400;
   }
   
   .nav .container {
@@ -29,7 +30,7 @@
   .nav a {
 	color: #fff;
 	text-decoration: none;
-	padding: 7px 15px;
+	padding: 7px 7px;
 	transition: all 0.3s ease-in-out;
     font-weight: bold;
   }
@@ -40,7 +41,7 @@
   }
   
   .nav.active a {
-	color: hsl(198, 60%, 50%);
+	color: hsl(176, 100%, 50%);
   }
   
   .nav.active .container {
