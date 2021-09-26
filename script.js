@@ -37,6 +37,19 @@ buttons.forEach(button => {
 // dark /light mode functionality
 const checkbox = document.getElementById('checkbox');
 
-checkbox.addEventListener('change', () => {
-    document.body.classList.toggle('dark');
+checkbox.addEventListener('change', (e) => {
+    if(e.target){
+        document.body.classList.toggle('dark')
+        localStorage.setItem("dark");
+    } else{
+        document.documentElement.setAttribute( "light");
+    // Set the user's theme preference to light
+    localStorage.setItem("light");
+    }
+    
+    // local storage to store users preference 
+    
 });
+
+
+
