@@ -7,8 +7,6 @@
 	right: 0;
 	transition: all 0.3s ease-in-out;
     z-index: 400;
-    background-color: var(--Dark-Blue-main);
-    
   }
   
   .nav .container {
@@ -17,7 +15,14 @@
 	align-items: center;
 	padding: 10px 0;
 	transition: all 0.3s ease-in-out;
-    margin: 0 20px;
+    // margin: 0 20px;
+    background-color: var(--Dark-Blue-main);
+  }
+
+  .dark .nav .container {
+      opacity: 0.77;
+      background-color: var(--Very-Dark-Blue);
+
   }
   
   .nav ul {
@@ -34,9 +39,10 @@
 	transition: all 0.3s ease-in-out;
     font-weight: bold;
   }
-.dark  .nav a {
-      color: var(--Very-Dark-Blue);
-  }
+// .dark .nav a {
+//     //   color: var(--Very-Dark-Blue);
+//     // background-color: var(--Very-Dark-Blue)
+//   }
 
   
   .nav.active {
