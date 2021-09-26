@@ -33,3 +33,10 @@ buttons.forEach(button => {
         setTimeout(() => circle.remove(), 500);
     })
 })
+
+// dark /light mode functionality
+const checkbox = document.getElementById('checkbox');
+
+checkbox.addEventListener('change', () => {
+    document.body.classList.toggle('dark');
+});

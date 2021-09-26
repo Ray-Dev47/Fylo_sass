@@ -19,10 +19,22 @@
 <body>
 
     <!-- nav  start-->
-    <nav class="nav">
-        <div class="container">
+    <nav class="nav mode ">
+        <div class="container dark light">
             <a href="#"><img src="./images/logo.svg" class="logo logo-when-sticky" alt="flyo logo"></a> 
-            <ul>
+
+            <!-- light & dark mode toggle -->
+            <div class="toggle">
+                <input type="checkbox" class="checkbox" id="checkbox">
+                <label for="checkbox" class="label">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                    
+                    <div class="ball"></div>
+                </label>
+            </div>
+
+            <ul >
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="#">Team</a></li>
                 <li><a href="#sign-up">Sign-in</a></li>
@@ -56,7 +68,7 @@
             </h1>
             <p class="main-text-para">Fylo stores all your most important files in one location. Access them wherever you need, share and collaborate with friends and family and co-workers.</p>
         </div>
-        <button class="btn ripple">Get Started</button>
+        <button class="btn">Get Started</button>
 
     <!-- end of main section -->
     </section>

@@ -1,3 +1,33 @@
+:root{
+    /* theme color */
+    --Very-Dark-Blue: hsl(243, 87%, 12%);
+    --Desaturated-Blue: hsl(238, 22%, 44%);
+    --Bright-Blue: hsl(224, 93%, 58%);
+    --Moderate-Cyan: hsl(170, 45%, 43%);
+    --Light-Grayish-Blue: hsl(240, 75%, 98%);
+    --Light-Gray: hsl(0, 0%, 75%);
+
+    /* dark-theme */
+    --Dark-Blue-into : hsl(217, 28%, 15%);
+    --Dark-Blue-main : hsl(218, 28%, 13%);
+    --Dark-Blue-footer : hsl(216, 53%, 9%);
+    --Dark-Blue-testimonial : hsl(219, 30%, 18%);
+
+    /* dark-accent */
+    --Cyan : hsl(176, 68%, 64%);
+    --Blue :hsl(198, 60%, 50%);
+    --Light-Red : hsl(0, 100%, 63%);
+
+    /* neutral */
+    --White: hsl(0, 0%, 100%);
+
+    /* theme text */
+    --raleway-400: 'Raleway', sans-serif;
+    --raleway-700: 'Raleway', sans-serif;
+    --open-sans: 'Open Sans', sans-serif;
+}
+
+
 body,
 html {
     /* color: #555; */
@@ -14,11 +44,60 @@ html {
     scroll-behavior: smooth;
 }
 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+// light mode:
+.light{
+    background: var(--Light-Grayish-Blue);
+    transition: 0.5s linear;
+}
+
+/* dark-mode */
+.label{
+    background-color: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    padding: 5px;
+    width: 50px;
+    position: relative;
+    cursor: pointer;
+}
+
+.fa-moon{
+    color: #f1c40f;
+}
+
+.fa-sun{
+    color: #f39c12;
+}
+
+.ball{
+    background: #fff;
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    top: 2px;
+    left: 1px;
+    transition: transform 0.5s linear;
+}
+
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox:checked + .label .ball{
+    transform: translateX(24px);
+}
+
 
 // nav section
 @import './nav';
@@ -83,9 +162,13 @@ html {
 }
 
 @media only screen and (max-width: 480px) {
-.container{
-    margin: 0 10px;
-}
+// .container{
+//     margin: 0 10px;
+// }
+.nav a {
+	padding: 7px 7px;
+	
+  }
 .logo {
     height: 24px;
     width: auto;
@@ -221,6 +304,12 @@ html {
     text-align: center;
 }
 }
+}
+@media only screen and (max-width: 480px) {
+    .nav a {
+        padding: 7px 5px;
+        
+      }
 }
 
 

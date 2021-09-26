@@ -1,15 +1,22 @@
 #features {
-    width: 70%;
-    margin: auto;
+    
     padding: 10px 0;
     text-align: center;
     margin-top: 100px;
 }
+.dark #features{
+    background: #fbfbff;
+    width: 100vw;
+}
+
 .features_content {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 50px;
+    width: 70%;
+    margin: auto;
+    margin-top: 8rem;
 }
 .features_content_main {
     width: 340px;
@@ -18,9 +25,19 @@
 .features_content_main .features_icon {
     margin-bottom: 30px;
 }
+.dark .features_content_main .features_icon{
+    color: hsl(198, 60%, 50%);
+}
+
 .features_content_main h2 {
     margin-bottom: 20px;
 }
+.dark .features_content_main h2{
+    color:var(--Very-Dark-Blue)
+}
 .features_content_main p {
     margin-bottom: 30px
+}
+.dark .features_content_main p{
+    color: var(--Very-Dark-Blue)
 }

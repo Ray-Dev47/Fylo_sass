@@ -8,6 +8,11 @@ section #footer{
     background-color:  hsl(216, 53%, 9%);
     z-index: 50;
 }
+.dark .footer_content{
+    padding-top: 2rem;
+    background-color: var(--Very-Dark-Blue);
+}
+
 .footer_content .footer_logo img{
     height: auto;
     width: 120px;

@@ -2,7 +2,7 @@
     margin-right: 30px;
     margin-left: 30px;
     padding: 0 10px 0 10px;
- 
+    margin-top: 8rem;
 }
 .testimonial_content {
     display: flex;
@@ -13,6 +13,7 @@
     margin-top: 150px;
    
 }
+
 .testimonial_box {
     width: 400px;
     margin: auto;
@@ -22,11 +23,21 @@
     margin-bottom: 40px;
     z-index: 60;
 }
+
+.dark .testimonial_box{
+    background-color: #fff;
+}
 .testimonial_box .box_2 {
     margin: 0 10px 0 10px;
 }
 .testimonial_box p {
     margin-bottom: 20px;
+}
+.dark .testimonial_box p{
+    color: var(--Very-Dark-Blue)
+}
+.dark .testimonial_box h4{
+    color:var(--Very-Dark-Blue);
 }
 .testimonial_box .profile img {
     border-radius: 50%;
@@ -51,4 +62,7 @@
     top: -75px;
     left: 0;
     content: "\201C";
+}
+.dark .blockquote_text::before{
+    color: var(--Very-Dark-Blue)
 }

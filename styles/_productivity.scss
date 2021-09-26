@@ -1,6 +1,7 @@
 #productivity {
     width: 90%;
     margin: auto;
+    margin-top: 8rem;
 }
 .productivity_content {
     display: flex;
@@ -27,6 +28,12 @@
     margin-top: 80px;
     margin-bottom: 30px;
 }
+.dark .productivity_texts h1{
+    color:var(--Very-Dark-Blue);
+}
+.dark .productivity_texts p{
+    color: var(--Very-Dark-Blue)
+}
 .productivity_texts p {
     width: 455px;
     margin: auto;
@@ -40,6 +47,8 @@
     border-bottom: 2px solid hsl(176, 68%, 64%);
     padding: 6px 0;
 }
+
+
 .arrow{
     display: flex;
     align-content: center;
