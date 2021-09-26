@@ -52,10 +52,10 @@ html {
 }
 
 // light mode:
-.light{
-    background: var(--Light-Grayish-Blue);
-    transition: 0.5s linear;
-}
+// .light{
+//     background: var(--Light-Grayish-Blue);
+//     transition: 0.5s linear;
+// }
 
 /* dark-mode */
 .label{
@@ -118,7 +118,7 @@ html {
 
 
 
-// Media queries
+// Media queries/ responsiveness
 
 @media only screen and (max-width: 1200px) {
 
