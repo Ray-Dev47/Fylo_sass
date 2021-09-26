@@ -529,7 +529,6 @@ section #footer {
 }
 
 .dark .footer_content {
-  padding-top: 2rem;
   background-color: var(--Very-Dark-Blue);
 }
 
