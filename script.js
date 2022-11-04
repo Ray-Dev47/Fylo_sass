@@ -36,42 +36,24 @@ buttons.forEach((button) => {
 
 // dark /light mode functionality
 const checkbox = document.getElementById('checkbox');
-// let darkMode = localStorage.getItem("dark");
 
-// function enableDarkMode() {
-// 	document.body.classList.add('dark');
-// 	localStorage.setItem('dark', 'enabled');
-// }
 
-// function disableDarkMode() {
-// 	document.body.classList.remove('dark');
-// 	localStorage.removeItem('dark', 'disabled');
-// }
 
-// if (darkMode === "disabled") {
-//     disableDarkMode(); // set state of darkMode on page load
-//   }
 
-// checkbox.addEventListener('click', (e) => {
-//     if (darkMode === "disabled") {
-//         enableDarkMode();
-//       } else {
-//         disableDarkMode();
-//       }
-// });
 checkbox.addEventListener('click', (e) => {
 	if (e.target) {
-		console.log('hey clicked');
-		document.body.classList.toggle('dark');
-		localStorage.setItem('dark', 'enabled');
-	} else {
-		// document.setAttribute("light");
-		// Set the user's theme preference to light
-		localStorage.setItem('light', 'disabled');
+		console.log('hey clicked add');
+		document.body.classList.toggle('dark');	
+        localStorage.setItem('dark', false);
+        localStorage.getItem('dark')
+	} 
+    else {
+		localStorage.removeItem('dark');
+        console.log('hey clicked remove');
+        document.body.classList.remove('dark');
 	}
-
-	// local storage to store users preference
 });
+
 
 // get updated year
 function getDate() {
