@@ -36,42 +36,39 @@ buttons.forEach((button) => {
 
 // dark /light mode functionality
 const checkbox = document.getElementById('checkbox');
-// let darkMode = localStorage.getItem("dark");
 
-// function enableDarkMode() {
-// 	document.body.classList.add('dark');
-// 	localStorage.setItem('dark', 'enabled');
-// }
 
-// function disableDarkMode() {
-// 	document.body.classList.remove('dark');
-// 	localStorage.removeItem('dark', 'disabled');
-// }
+//check storage if dark mode was on or off
+if (sessionStorage.getItem("mode") == "dark") {
+    darkmode(); //if dark mode was on, run this funtion
+  } else {
+    nodark(); //else run this funtion
+  }
+  
+  //if the checkbox state is changed, run a funtion
+  checkbox.addEventListener("change", function() {
+    //check if the checkbox is checked or not
+    if (checkbox.checked) {
+      darkmode(); //if the checkbox is checked, run this funtion
+    } else {
+      nodark(); //else run this funtion
+    }
+  });
+  
+  //function for checkbox when checkbox is checked
+  function darkmode() {
+    document.body.classList.add("dark"); //add a class to the body tag
+    checkbox.checked = true; //set checkbox to be checked state
+    sessionStorage.setItem("mode", "dark"); //store a name & value to know that dark mode is on
+  }
+  
+  //function for checkbox when checkbox is not checked
+  function nodark() {
+    document.body.classList.remove("dark"); //remove added class from body tag
+    checkbox.checked = false; //set checkbox to be unchecked state
+    sessionStorage.setItem("mode", "light"); //store a name & value to know that dark mode is off or light mode is on
+  }
 
-// if (darkMode === "disabled") {
-//     disableDarkMode(); // set state of darkMode on page load
-//   }
-
-// checkbox.addEventListener('click', (e) => {
-//     if (darkMode === "disabled") {
-//         enableDarkMode();
-//       } else {
-//         disableDarkMode();
-//       }
-// });
-checkbox.addEventListener('click', (e) => {
-	if (e.target) {
-		console.log('hey clicked');
-		document.body.classList.toggle('dark');
-		localStorage.setItem('dark', 'enabled');
-	} else {
-		// document.setAttribute("light");
-		// Set the user's theme preference to light
-		localStorage.setItem('light', 'disabled');
-	}
-
-	// local storage to store users preference
-});
 
 // get updated year
 function getDate() {
