@@ -74,7 +74,4 @@ checkbox.addEventListener('click', (e) => {
 });
 
 // get updated year
-function getDate() {
-	return new Date().getFullYear();
-}
-document.onload = document.getElementById('currentYear').innerHTML = getDate();
+
