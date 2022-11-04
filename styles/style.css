@@ -36,7 +36,7 @@ html {
   background-image: url("./images/bg-curvy-desktop.svg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #181f2a;
+  background-color: hsl(218deg, 28%, 13%);
   scroll-behavior: smooth;
 }
 
@@ -126,7 +126,7 @@ html {
 }
 
 .nav.active {
-  background-color: #202a3c;
+  background-color: hsl(219deg, 30%, 18%);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -135,7 +135,7 @@ html {
 }
 
 .nav.active a {
-  color: #00ffee;
+  color: hsl(176deg, 100%, 50%);
 }
 
 .nav.active .container {
@@ -199,7 +199,7 @@ html {
   font-weight: 700;
   text-decoration: none;
   border-radius: 200px;
-  background-color: #339ecc;
+  background-color: hsl(198deg, 60%, 50%);
   color: #fff;
   border: none;
   outline: none;
@@ -212,7 +212,7 @@ html {
 }
 
 button, .btn:hover {
-  background-color: #65e2d9;
+  background-color: hsl(176deg, 68%, 64%);
 }
 
 /* features section */
@@ -247,7 +247,7 @@ button, .btn:hover {
 }
 
 .dark .features_content_main .features_icon {
-  color: #339ecc;
+  color: hsl(198deg, 60%, 50%);
 }
 
 .features_content_main h2 {
@@ -319,9 +319,9 @@ button, .btn:hover {
 }
 
 .productivity_texts a {
-  color: #65e2d9;
+  color: hsl(176deg, 68%, 64%);
   text-decoration: none;
-  border-bottom: 2px solid #65e2d9;
+  border-bottom: 2px solid hsl(176deg, 68%, 64%);
   padding: 6px 0;
 }
 
@@ -356,7 +356,7 @@ button, .btn:hover {
   width: 400px;
   margin: auto;
   padding: 35px 28px;
-  background-color: #202a3c;
+  background-color: hsl(219deg, 30%, 18%);
   border-radius: 5px;
   margin-bottom: 40px;
   z-index: 60;
@@ -402,7 +402,7 @@ button, .btn:hover {
 }
 
 .blockquote_text::before {
-  color: #65e2d9;
+  color: hsl(176deg, 68%, 64%);
   font-size: 215px;
   position: absolute;
   top: -75px;
@@ -417,7 +417,7 @@ button, .btn:hover {
 /* sign up section */
 #sign-up {
   margin-top: 100px;
-  background-color: #1c2431;
+  background-color: hsl(217deg, 28%, 15%);
   padding: 30px 0px;
 }
 
@@ -484,7 +484,7 @@ button, .btn:hover {
   outline: none;
   text-align: center;
   margin-left: 18px;
-  background-color: #339ecc;
+  background-color: hsl(198deg, 60%, 50%);
 }
 
 .dark .searchbar_2 > input[type=text] {
@@ -508,7 +508,7 @@ button, .btn:hover {
 }
 
 .btn:hover {
-  background-color: #65e2d9;
+  background-color: hsl(176deg, 68%, 64%);
 }
 
 /* footer section */
@@ -520,7 +520,7 @@ section #footer {
   padding: 70px 0;
   width: 100%;
   margin: auto;
-  background-color: #0b1523;
+  background-color: hsl(216deg, 53%, 9%);
   z-index: 50;
 }
 
@@ -600,7 +600,7 @@ section #footer {
 }
 
 .social-links div:hover {
-  color: #65e2d9;
+  color: hsl(176deg, 68%, 64%);
 }
 
 .social-links div {
@@ -616,6 +616,10 @@ section #footer {
   margin-right: 10px;
 }
 
+.footer_content .copyright {
+  text-align: center;
+}
+
 @media only screen and (max-width: 910px) {
   .signup-texts > p {
     margin-bottom: 20px;
@@ -627,18 +631,15 @@ section #footer {
     display: flex;
     flex-direction: column;
   }
-
   .searchbar_2 button {
     display: flex;
     padding: 14px 120px;
   }
-
   #productivity .productivity_image img {
     padding-right: 0px;
     width: 90%;
     height: auto;
   }
-
   .signup-texts > p {
     width: 500px;
     margin-bottom: 10pz;
@@ -648,12 +649,10 @@ section #footer {
   .nav a {
     padding: 7px 7px;
   }
-
   .logo {
     height: 24px;
     width: auto;
   }
-
   .main-nav li a:link,
 .main-nav li a:visited {
     padding: 8px 0;
@@ -662,16 +661,13 @@ section #footer {
     font-weight: 300;
     font-weight: bolder;
   }
-
   .main-nav li {
     margin-left: 22px;
   }
-
   .main-img img {
     width: 85%;
     height: auto;
   }
-
   .main-texts h1 {
     font-size: 1.8rem;
     font-weight: 700;
@@ -680,18 +676,15 @@ section #footer {
     margin: auto;
     padding-bottom: 23px;
   }
-
   .main-texts p {
     font-size: 1.2rem;
     width: 90%;
     margin: auto;
     margin-bottom: 30px;
   }
-
   .btn {
     margin-bottom: 20px;
   }
-
   #features {
     width: 85%;
     margin: auto;
@@ -699,30 +692,24 @@ section #footer {
     text-align: center;
     margin-top: 100px;
   }
-
   .features_content_main p {
     margin-bottom: 60px;
   }
-
   .features_content_main h2 {
     margin-bottom: 15px;
   }
-
   #productivity {
     width: 90%;
     margin: auto;
   }
-
   #productivity .productivity_image img {
     padding-right: 0px;
   }
-
   .productivity_texts h1 {
     font-size: 20px;
     margin-top: 50px;
     margin-bottom: 30px;
   }
-
   .productivity_texts p {
     width: 350px;
     margin: auto;
@@ -730,49 +717,41 @@ section #footer {
     justify-items: flex-start;
     margin-bottom: 20px;
   }
-
   #testimonial {
     margin-right: 30px;
     margin-left: 30px;
     padding: 0 5px 0 5px;
     margin-top: 150px;
   }
-
   .testimonial_box {
     width: 550px;
     margin: auto;
     padding: 20px 30px;
-    background-color: #202a3c;
+    background-color: hsl(219deg, 30%, 18%);
     border-radius: 5px;
     margin-bottom: 40px;
   }
-
   #sign-up {
     /* top: -400px; */
     margin-top: 100px;
-    background-color: #1c2431;
+    background-color: hsl(217deg, 28%, 15%);
     padding: 30px 0px;
   }
-
   .sign-up_content {
     width: 100%;
     margin-left: 0;
   }
-
   .signup-texts {
     margin: 0 10px;
   }
-
   .signup-texts h1 {
     font-size: 22px;
     margin-bottom: 30px;
   }
-
   .signup-texts p {
     width: 100%;
     margin: auto;
   }
-
   .search_bar {
     max-width: 95%;
     margin: 0 auto;
@@ -780,11 +759,9 @@ section #footer {
     flex-direction: column;
     margin-top: 30px;
   }
-
   .searchbar_1 > input[type=text] {
     padding: 15px 55px;
   }
-
   .searchbar_2 .btn {
     display: flex;
     padding: 14px 70px;
@@ -792,16 +769,14 @@ section #footer {
     border: none;
     outline: none;
     /* margin-left: 18px; */
-    background-color: #65e2d9;
+    background-color: hsl(176deg, 68%, 64%);
   }
-
   .footer_content .footer_logo img {
     height: 45px;
     width: auto;
     margin-bottom: 30px;
     display: flex;
   }
-
   .social-links i {
     text-align: center;
   }
